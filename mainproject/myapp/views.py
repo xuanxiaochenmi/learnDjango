@@ -11,5 +11,5 @@ def CalAdd(request):
     value_a = int(request.POST['valueA'])
     value_b = int(request.POST['valueB'])
     result = value_a + value_b
-    return render(request,'cal.html',{'result':result})
+    return render(request,'result.html',context={'data':result})
     print(value_a,value_b , value_a+value_b)

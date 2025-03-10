@@ -26,5 +26,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
     path('CalPage/', views.CalPage),
-    path('cal/', views.CalAdd)
+    path('cal', views.CalAdd)
 ]
