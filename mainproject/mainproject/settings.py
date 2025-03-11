@@ -81,6 +81,22 @@ DATABASES = {
     }
 }
 
+# 修改成Mysql數據庫
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',  # 使用 MySQL 引擎
+        'NAME': 'mydatabase',                 # 数据库名称
+        'USER': 'root',                       # 数据库用户名
+        'PASSWORD': 'yourpassword',           # 数据库密码
+        'HOST': 'localhost',                  # 数据库地址
+        'PORT': '3306',                       # 数据库端口
+        'OPTIONS': {
+            'charset': 'utf8mb4',             # 设置字符集
+        },
+    }
+}
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

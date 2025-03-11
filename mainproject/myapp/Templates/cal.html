@@ -6,13 +6,13 @@
     <title>计算页面</title>
 </head>
     <body>
-        <form method="POST" action="/cal">
+        <form method="POST" action="/cal/">
             {% csrf_token %}
 
-            <label for="valueA">数字 A：</label>
+            <label for="valueA">数字 A:</label>
             <input type="number" name="valueA" >    
             +
-            <label for="valueB">数字 B：</label>
+            <label for="valueB">数字 B:</label>
             <input type="number" name="valueB" >
             <br>
             <button type="submit">计算</button>

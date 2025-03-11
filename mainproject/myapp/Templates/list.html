@@ -1,0 +1,35 @@
+<!-- 基本html框架 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cal Result List</title>
+    </head>
+
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>value_A</th>
+                    <th>value_B</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+
+            {% for each in data %}
+            <tr>
+                <td>{{ each.id }}</td>
+                <td>{{ each.value_a }}</td>
+                <td>{{ each.value_b }}</td>
+                <td>{{ each.result }}</td>
+            </tr>
+            {%  endfor %}
+        </table>
+
+        <form action = '/del/' method = 'POST'>
+            {% csrf_token %}
+            <input type = 'submit' value = '清庫'> 
+        </form>
+    </body>
+</html>
